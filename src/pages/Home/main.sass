@@ -1,0 +1,40 @@
+@import "../../styles/colors"
+@import "../../styles/mixins"
+  
+*
+  box-sizing: border-box
+  font-family: "Avenir"
+
+body 
+  margin: 0
+  padding: 0
+  color: $black
+  background-color: white
+
+input:focus,
+button:focus
+  outline: none
+
+button
+  height: 38px
+  padding: 0 30px
+  display: flex
+  flex-direction: row
+  justify-content: center
+  text-transform: uppercase
+  font-weight: 600
+  font-size: .8rem
+  font-family: "Avenir"
+  color: white
+
+button.purple
+  background-color: $purple
+  border: none
+  border-radius: 5px
+  +box-shadow(0px, 2px, 3px, 0px, $purple-shadow)
+
+button.purple:hover
+  background-color: $pink
+  border: none
+  border-radius: 5px
+  +box-shadow(0px, 2px, 3px, 0px, $pink-shadow)

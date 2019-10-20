@@ -1,3 +1,6 @@
+import { Menu } from "../../components";
+
 export default {
-  name: "Home"
+  name: "Home",
+  components: { Menu }
 };
